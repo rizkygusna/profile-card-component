@@ -52,11 +52,35 @@ main {
 .banner {
   overflow: hidden;
   background: no-repeat center/cover url(./images/bg-pattern-card.svg);
-  height: 300px;
-  position: relative;
+  height: 140px;
+  width: 100%;
+}
+
+.profile-info {
+  padding-bottom: 1.5em;
+  padding-top: 4em;
+}
+
+.profile-picture img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.profile-picture {
+  position: absolute;
+  /* horizontal centering */
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  padding: 0.5em 0;
 }
 
 .engagement {
+  padding: 2em;
   display: flex;
   width: 100%;
   flex-direction: row;
