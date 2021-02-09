@@ -27,10 +27,14 @@ body {
 }
 
 main {
+  /* static responsive background */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);
+  background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+  background-repeat: no-repeat;
 }
 
 .card-container {
@@ -50,10 +54,9 @@ main {
 }
 
 .banner {
-  overflow: hidden;
-  background: no-repeat center/cover url(./images/bg-pattern-card.svg);
-  height: 140px;
   width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .profile-info {
@@ -102,9 +105,6 @@ main {
   margin-bottom: 5px;
 }
 
-/* p {
-  color: hsl(227, 10%, 46%);
-} */
 @media (max-width: 375px) {
   .card-container {
     width: 320px;
